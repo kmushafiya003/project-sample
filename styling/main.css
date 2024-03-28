@@ -1,0 +1,170 @@
+:root {
+    --primary-red: #e3242b;
+    --bg-light-blue: #d3ddfe; 
+    --bg-blue: #151e3d; 
+    --white: #ffffff;
+    --black: #000000;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -5px rgba(128, 134, 153, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+ 
+  }
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--lm-text-alt)
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  button{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    color: var(--white);
+    letter-spacing: 0.5px;
+  }
+ 
+
+  .container {
+    width: 85%;
+    margin-inline: auto;
+
+
+  }
+
+  .button-container{
+    background-color: var(--primary-red);
+    padding-inline: 22px;
+    padding-block: 10px;
+    border-radius: 8px;
+   
+  }
+
+
+  /* -------------- Navbar -------------- */
+
+  .navbar{
+    padding-top: 28px;
+    padding-bottom:8px;
+    box-shadow: var(--lm-shadow);
+  }
+
+  .navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo-text{
+    font-size: 24px;
+  }
+
+  .navlinks-container{
+
+    display:none;
+    
+  }
+
+  .link{
+    font-size:14px;
+    letter-spacing: 0.5px;
+  
+  }
+   .link a:hover{
+    transition: all;
+    transition-duration: 0.1s;
+    color:var(--primary-red);
+   }
+
+
+   /* ---------------- Responsive navbar ------------ */
+
+   .fa-bars{
+    display:flex;
+    font-size: 20px;
+   }
+
+   .respo-navbar{
+    display: none;
+    animation-name: open;
+    animation-duration: 0.7s;
+    position: absolute;
+    right:5px;
+    top:10%;
+    border:1px solid var(--primary-red);
+    border-radius:8px;
+    max-width:350px;
+    width:290px;
+    padding-inline:20px;
+    padding-block:16px;
+    background-color: var(--bg-light-blue);
+  }
+
+  .respo-navbar.active{
+    
+    display: flex;
+    flex-direction:column;
+    gap:18px;
+    
+ 
+  }
+
+  @keyframes open {
+    0% {right: -100%}
+    100% {right: 5px }
+}
+
+.close{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  
+}
+
+.fa-xmark{
+    font-size:20px;
+}
+
+
+.respo-navlinks-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+ 
+
+}
+
+
+.respo-link a:hover{
+    transition: all;
+    transition-duration: 0.1s;
+    color:var(--primary-red)
+}

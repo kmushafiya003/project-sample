@@ -1,0 +1,95 @@
+
+
+  /* --------- phone  ----------- */
+
+  @media screen and (min-width: 500px) {
+   
+    .logo-text{
+        font-size: 28px;
+      }
+
+      .respo-navbar{
+        max-width:400px;
+        width:350px;
+      }   
+  
+}
+
+
+
+
+/* --------- tablet  ---------- */
+
+@media screen and (min-width: 768px) {
+   
+    .container{
+        width: 95%;
+    }
+
+    .navlinks-container{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+        
+      }
+
+      .fa-bars{
+
+      position: absolute;
+      display: none;
+      }
+
+      .respo-navbar{
+        position: absolute;
+        right: -100%;
+      }
+   
+
+
+  }
+
+  @media screen and (min-width: 900px) {
+   
+    .container{
+        width: 90%;
+    }
+    .navlinks-container{
+        gap: 24px;
+    }
+  
+    .link{
+        font-size: 16px;
+    }
+
+    .logo-text{
+        font-size: 28px;
+      }
+
+      
+  .button-container{
+
+    padding-inline: 28px;
+    padding-block: 12px;
+    
+   
+  }
+
+
+  }
+
+  /* --------- desktop  ----------- */
+
+  @media screen and (min-width: 1024px) {
+   
+    .container{
+        width: 82%;
+    }
+    
+    .navlinks-container{
+        gap: 30px;
+    }
+
+
+  }
